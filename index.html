@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#0a0f2a" />
-    <meta property="og:title" content="Md Nur Uddin" />
+    <meta property="og:title" content="Md Nur Uddin — Front‑End Developer" />
     <meta
       property="og:description"
       content="Front-End Developer. AI & Cybersecurity Enthusiast."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:image" />
-    <title>Md Nur Uddin</title>
+    <meta property="og:image" content="/favicon.ico" />
+    <title>Md Nur Uddin — Front‑End Developer</title>
     <meta
       name="description"
       content="Portfolio of Md Nur Uddin — Front-End Developer, AI & Cybersecurity Enthusiast"
@@ -22,7 +22,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Poppins:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/styles.css?v=4" />
   </head>
   <body>
     <a class="skip-link" href="#about">Skip to content</a>
@@ -60,16 +60,32 @@
 
     <!-- Header/Hero -->
     <header class="hero" id="home" role="banner">
-      <div class="hero-inner">
-        <p class="eyebrow reveal">Front‑End Developer</p>
-        <h1 class="hero-title reveal" style="--delay: 0.1s">Md Nur Uddin</h1>
-        <p class="hero-tagline reveal" style="--delay: 0.2s">
-          AI &amp; Cybersecurity Enthusiast
-        </p>
-        <div class="cta reveal" style="--delay: 0.3s">
-          <a href="#projects" class="btn btn-primary">View Projects</a>
-          <a href="#contact" class="btn btn-ghost">Contact Me</a>
+      <div class="hero-inner hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow reveal">Front‑End Developer</p>
+          <h1 class="hero-title reveal" style="--delay: 0.1s">Md Nur Uddin</h1>
+          <p class="hero-tagline reveal" style="--delay: 0.2s">
+            AI &amp; Cybersecurity Enthusiast
+          </p>
+          <div class="cta reveal" style="--delay: 0.3s">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-ghost">Contact Me</a>
+          </div>
         </div>
+        <figure class="hero-portrait reveal" style="--delay: 0.25s">
+          <div class="portrait-frame">
+            <img
+              class="portrait"
+              src="https://cdn.builder.io/api/v1/image/assets%2Fde0dc80264c94a77bab82e76571d0bd7%2F9dc0af58d2dc4865802090afaaccf01e?format=webp&width=800"
+              alt="Portrait of Md Nur Uddin"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <figcaption class="visually-hidden">
+            Md Nur Uddin — Front-End Developer
+          </figcaption>
+        </figure>
       </div>
       <button
         class="scroll-down"
@@ -221,90 +237,82 @@
               A selection of recent work and experiments.
             </p>
           </div>
-          <div class="slider" data-slider>
-            <div class="slides">
-              <article class="slide project" aria-label="Project 1">
-                <a
-                  class="project-card"
-                  href="https://mdnuruddin.vercel.app"
-                  target="_blank"
-                  rel="noopener"
-                  data-lightbox
-                >
-                  <div
-                    class="thumb"
-                    style="
-                      --bg: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop');
-                    "
-                  ></div>
-                  <div class="overlay">
-                    <h3>Personal Portfolio</h3>
-                    <p>React, Tailwind, Vite</p>
-                  </div>
-                </a>
-              </article>
-              <article class="slide project" aria-label="Project 2">
-                <a class="project-card" href="#" data-lightbox>
-                  <div
-                    class="thumb"
-                    style="
-                      --bg: url('https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=1200&auto=format&fit=crop');
-                    "
-                  ></div>
-                  <div class="overlay">
-                    <h3>Dashboard UI</h3>
-                    <p>JS, Charts, REST</p>
-                  </div>
-                </a>
-              </article>
-              <article class="slide project" aria-label="Project 3">
-                <a class="project-card" href="#" data-lightbox>
-                  <div
-                    class="thumb"
-                    style="
-                      --bg: url('https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop');
-                    "
-                  ></div>
-                  <div class="overlay">
-                    <h3>AI Playground</h3>
-                    <p>JS, Web Workers</p>
-                  </div>
-                </a>
-              </article>
-              <article class="slide project" aria-label="Project 4">
-                <a class="project-card" href="#" data-lightbox>
-                  <div
-                    class="thumb"
-                    style="
-                      --bg: url('https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1200&auto=format&fit=crop');
-                    "
-                  ></div>
-                  <div class="overlay">
-                    <h3>Component Library</h3>
-                    <p>CSS, Accessibility</p>
-                  </div>
-                </a>
-              </article>
-              <article class="slide project" aria-label="Project 5">
-                <a class="project-card" href="#" data-lightbox>
-                  <div
-                    class="thumb"
-                    style="
-                      --bg: url('https://images.unsplash.com/photo-1523473827532-1c0cb5f0b1b4?q=80&w=1200&auto=format&fit=crop');
-                    "
-                  ></div>
-                  <div class="overlay">
-                    <h3>Cybersecurity Lab</h3>
-                    <p>C, C++, JS</p>
-                  </div>
-                </a>
-              </article>
-            </div>
-            <button class="nav prev" aria-label="Previous slide">
-              &#10094;
-            </button>
-            <button class="nav next" aria-label="Next slide">&#10095;</button>
-            <div class="dots" aria-hidden="true"></div>
+          <div class="gallery projects-grid">
+            <article class="project" aria-label="Project 1">
+              <a
+                class="project-card"
+                href="https://mdnuruddin.vercel.app"
+                target="_blank"
+                rel="noopener"
+              >
+                <div
+                  class="thumb"
+                  style="
+                    --bg: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop');
+                  "
+                ></div>
+                <div class="card-info">
+                  <h3>Personal Portfolio</h3>
+                  <p>React, Tailwind, Vite</p>
+                </div>
+              </a>
+            </article>
+            <article class="project" aria-label="Project 2">
+              <a class="project-card" href="#">
+                <div
+                  class="thumb"
+                  style="
+                    --bg: url('https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=1200&auto=format&fit=crop');
+                  "
+                ></div>
+                <div class="card-info">
+                  <h3>Dashboard UI</h3>
+                  <p>JS, Charts, REST</p>
+                </div>
+              </a>
+            </article>
+            <article class="project" aria-label="Project 3">
+              <a class="project-card" href="#">
+                <div
+                  class="thumb"
+                  style="
+                    --bg: url('https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop');
+                  "
+                ></div>
+                <div class="card-info">
+                  <h3>AI Playground</h3>
+                  <p>JS, Web Workers</p>
+                </div>
+              </a>
+            </article>
+            <article class="project" aria-label="Project 4">
+              <a class="project-card" href="#">
+                <div
+                  class="thumb"
+                  style="
+                    --bg: url('https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1200&auto=format&fit=crop');
+                  "
+                ></div>
+                <div class="card-info">
+                  <h3>Component Library</h3>
+                  <p>CSS, Accessibility</p>
+                </div>
+              </a>
+            </article>
+            <article class="project" aria-label="Project 5">
+              <a class="project-card" href="#">
+                <div
+                  class="thumb"
+                  style="
+                    --bg: url('https://images.unsplash.com/photo-1523473827532-1c0cb5f0b1b4?q=80&w=1200&auto=format&fit=crop');
+                  "
+                ></div>
+                <div class="card-info">
+                  <h3>Cybersecurity Lab</h3>
+                  <p>C, C++, JS</p>
+                </div>
+              </a>
+            </article>
           </div>
         </div>
       </section>
@@ -324,84 +332,63 @@
               Selected milestones and recognitions.
             </p>
           </div>
-          <div class="slider compact" data-slider>
-            <div class="slides">
-              <article class="slide cert">
-                <a class="cert-card" href="#" data-lightbox>
-                  <div
-                    class="thumb"
-                    style="
-                      --bg: url('https://images.unsplash.com/photo-1516387938699-a93567ec168e?q=80&w=1200&auto=format&fit=crop');
-                    "
-                  ></div>
-                  <div class="overlay">
-                    <h3>Frontend Foundations</h3>
-                    <p>Completed with distinction</p>
-                  </div>
-                </a>
-              </article>
-              <article class="slide cert">
-                <a class="cert-card" href="#" data-lightbox>
-                  <div
-                    class="thumb"
-                    style="
-                      --bg: url('https://images.unsplash.com/photo-1557800636-894a64c1696f?q=80&w=1200&auto=format&fit=crop');
-                    "
-                  ></div>
-                  <div class="overlay">
-                    <h3>JavaScript Mastery</h3>
-                    <p>Advanced algorithms</p>
-                  </div>
-                </a>
-              </article>
-              <article class="slide cert">
-                <a class="cert-card" href="#" data-lightbox>
-                  <div
-                    class="thumb"
-                    style="
-                      --bg: url('https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=1200&auto=format&fit=crop');
-                    "
-                  ></div>
-                  <div class="overlay">
-                    <h3>React Specialist</h3>
-                    <p>Modern SPA patterns</p>
-                  </div>
-                </a>
-              </article>
-              <article class="slide cert">
-                <a class="cert-card" href="#" data-lightbox>
-                  <div
-                    class="thumb"
-                    style="
-                      --bg: url('https://images.unsplash.com/photo-1587620962725-abab7fe55159?q=80&w=1200&auto=format&fit=crop');
-                    "
-                  ></div>
-                  <div class="overlay">
-                    <h3>Git &amp; GitHub</h3>
-                    <p>Collaboration &amp; CI</p>
-                  </div>
-                </a>
-              </article>
-              <article class="slide cert">
-                <a class="cert-card" href="#" data-lightbox>
-                  <div
-                    class="thumb"
-                    style="
-                      --bg: url('https://images.unsplash.com/photo-1510511233900-1982d92bd835?q=80&w=1200&auto=format&fit=crop');
-                    "
-                  ></div>
-                  <div class="overlay">
-                    <h3>Cybersecurity Basics</h3>
-                    <p>Secure coding</p>
-                  </div>
-                </a>
-              </article>
-            </div>
-            <button class="nav prev" aria-label="Previous slide">
-              &#10094;
-            </button>
-            <button class="nav next" aria-label="Next slide">&#10095;</button>
-            <div class="dots" aria-hidden="true"></div>
+          <div class="gallery cert-grid">
+            <article class="cert">
+              <a class="cert-card" href="#" data-lightbox>
+                <div class="thumb">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2Fde0dc80264c94a77bab82e76571d0bd7%2F971d7ecd7d3d4a8abbb263986dd2c03c?format=webp&width=1200"
+                    alt="Creative IT Institute Certificate"
+                  />
+                </div>
+                <div class="card-info">
+                  <h3>Creative IT Institute</h3>
+                  <p>Frontend Development with React — Grade A</p>
+                </div>
+              </a>
+            </article>
+            <article class="cert">
+              <a class="cert-card" href="#" data-lightbox>
+                <div class="thumb">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2Fde0dc80264c94a77bab82e76571d0bd7%2Ff2dc062dbb0a419ea2e756c6d9dc487e?format=webp&width=1200"
+                    alt="Ostad Cyber Security Certificate"
+                  />
+                </div>
+                <div class="card-info">
+                  <h3>Ostad</h3>
+                  <p>Cyber Security &amp; Ethical Hacking Workshop</p>
+                </div>
+              </a>
+            </article>
+            <article class="cert">
+              <a class="cert-card" href="#" data-lightbox>
+                <div class="thumb">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2Fde0dc80264c94a77bab82e76571d0bd7%2Fcc18d468ed9b4eeb886bad577d58426e?format=webp&width=1200"
+                    alt="Microsoft Learn Git & GitHub Certificate"
+                  />
+                </div>
+                <div class="card-info">
+                  <h3>Microsoft Learn</h3>
+                  <p>Mastering Git and GitHub</p>
+                </div>
+              </a>
+            </article>
+            <article class="cert">
+              <a class="cert-card" href="#" data-lightbox>
+                <div class="thumb">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2Fde0dc80264c94a77bab82e76571d0bd7%2F0a12a6b4b3bb4ead8eac443bc4fd2651?format=webp&width=1200"
+                    alt="University of Michigan Python Certificate"
+                  />
+                </div>
+                <div class="card-info">
+                  <h3>University of Michigan</h3>
+                  <p>Programming for Everybody (Python)</p>
+                </div>
+              </a>
+            </article>
           </div>
         </div>
       </section>
@@ -526,6 +513,6 @@
       <img alt="Preview" />
     </div>
 
-    <script src="/script.js" defer></script>
+    <script src="/script.js?v=4" defer></script>
   </body>
 </html>
