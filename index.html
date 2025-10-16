@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0a0f2a" />
+    <meta property="og:title" content="Md Nur Uddin" />
+    <meta
+      property="og:description"
+      content="Front-End Developer. AI & Cybersecurity Enthusiast."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" />
+    <title>Md Nur Uddin</title>
+    <meta
+      name="description"
+      content="Portfolio of Md Nur Uddin — Front-End Developer, AI & Cybersecurity Enthusiast"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Poppins:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#about">Skip to content</a>
+    <nav class="site-nav" role="navigation" aria-label="Primary">
+      <div class="container nav-inner">
+        <a class="brand" href="#home" aria-label="Home"
+          >Md&nbsp;Nur&nbsp;Uddin</a
+        >
+        <button
+          class="menu-toggle"
+          aria-expanded="false"
+          aria-controls="nav-links"
+          aria-label="Toggle menu"
+        >
+          ☰
+        </button>
+        <ul id="nav-links" class="links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certificates">Certificates</a></li>
+          <li><a href="#contact" class="btn btn-ghost small">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Animated galaxy background -->
+    <canvas id="starfield" aria-hidden="true"></canvas>
+    <div class="bg-gradient"></div>
+    <div class="orbs" aria-hidden="true">
+      <span class="orb o1"></span>
+      <span class="orb o2"></span>
+      <span class="orb o3"></span>
+    </div>
+
+    <!-- Header/Hero -->
+    <header class="hero" id="home" role="banner">
+      <div class="hero-inner">
+        <p class="eyebrow reveal">Front‑End Developer</p>
+        <h1 class="hero-title reveal" style="--delay: 0.1s">Md Nur Uddin</h1>
+        <p class="hero-tagline reveal" style="--delay: 0.2s">
+          AI &amp; Cybersecurity Enthusiast
+        </p>
+        <div class="cta reveal" style="--delay: 0.3s">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-ghost">Contact Me</a>
+        </div>
+      </div>
+      <button
+        class="scroll-down"
+        aria-label="Scroll to content"
+        onclick="document.querySelector('#about').scrollIntoView({behavior:'smooth'})"
+      >
+        <span></span>
+      </button>
+    </header>
+
+    <main>
+      <!-- About -->
+      <section class="section" id="about" aria-labelledby="about-heading">
+        <div class="container">
+          <h2 class="section-title reveal">About</h2>
+          <div class="about-grid">
+            <p class="about-text reveal" style="--delay: 0.05s">
+              I’m a front‑end developer crafting fast, accessible and delightful
+              experiences for the web. I love building modern interfaces,
+              exploring AI for smarter UI, and staying sharp with cybersecurity
+              best practices.
+            </p>
+            <ul class="contact-card reveal" style="--delay: 0.1s">
+              <li>
+                <span>Phone</span
+                ><a href="tel:+8801830170084">+880 1830‑170084</a>
+              </li>
+              <li>
+                <span>Email</span
+                ><a href="mailto:mdnuruddin2002@gmail.com"
+                  >mdnuruddin2002@gmail.com</a
+                >
+              </li>
+              <li><span>Location</span><strong>Mirpur‑11, Dhaka</strong></li>
+              <li>
+                <span>Website</span
+                ><a
+                  href="https://mdnuruddin.vercel.app"
+                  target="_blank"
+                  rel="noopener"
+                  >mdnuruddin.vercel.app</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section
+        class="section alt"
+        id="education"
+        aria-labelledby="education-heading"
+      >
+        <div class="container">
+          <h2 class="section-title reveal">Education</h2>
+          <ol class="timeline">
+            <li class="card reveal">
+              <div class="card-inner">
+                <h3>HSC — Science</h3>
+                <p class="meta">Notable focus on Mathematics &amp; ICT</p>
+                <p>
+                  Built strong foundations in problem solving and algorithms,
+                  participated in coding clubs and tech fests.
+                </p>
+              </div>
+            </li>
+            <li class="card reveal" style="--delay: 0.05s">
+              <div class="card-inner">
+                <h3>SSC — Science</h3>
+                <p class="meta">Achievements in ICT &amp; Physics</p>
+                <p>
+                  Early projects in C/C++ and web basics, ignited passion for
+                  building and breaking things responsibly.
+                </p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="section" id="skills" aria-labelledby="skills-heading">
+        <div class="container">
+          <h2 class="section-title reveal">Skills</h2>
+          <div class="skills-grid">
+            <div class="skill reveal" data-progress="85">
+              <div class="radial" aria-hidden="true"></div>
+              <div class="skill-info">
+                <span class="icon">C</span><strong>C</strong><em>Advanced</em>
+              </div>
+            </div>
+            <div class="skill reveal" style="--delay: 0.03s" data-progress="80">
+              <div class="radial"></div>
+              <div class="skill-info">
+                <span class="icon">C++</span><strong>C++</strong
+                ><em>Advanced</em>
+              </div>
+            </div>
+            <div class="skill reveal" style="--delay: 0.06s" data-progress="90">
+              <div class="radial"></div>
+              <div class="skill-info">
+                <span class="icon">JS</span><strong>JavaScript</strong
+                ><em>Expert</em>
+              </div>
+            </div>
+            <div class="skill reveal" style="--delay: 0.09s" data-progress="75">
+              <div class="radial"></div>
+              <div class="skill-info">
+                <span class="icon">Git</span><strong>Git &amp; GitHub</strong
+                ><em>Proficient</em>
+              </div>
+            </div>
+            <div class="skill reveal" style="--delay: 0.12s" data-progress="85">
+              <div class="radial"></div>
+              <div class="skill-info">
+                <span class="icon">⚛︎</span><strong>React.js</strong
+                ><em>Advanced</em>
+              </div>
+            </div>
+            <div class="skill reveal" style="--delay: 0.15s" data-progress="80">
+              <div class="radial"></div>
+              <div class="skill-info">
+                <span class="icon">TW</span><strong>Tailwind CSS</strong
+                ><em>Proficient</em>
+              </div>
+            </div>
+            <div class="skill reveal" style="--delay: 0.18s" data-progress="70">
+              <div class="radial"></div>
+              <div class="skill-info">
+                <span class="icon">B</span><strong>Bootstrap</strong
+                ><em>Proficient</em>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Slider -->
+      <section
+        class="section alt"
+        id="projects"
+        aria-labelledby="projects-heading"
+      >
+        <div class="container">
+          <div class="section-head">
+            <h2 class="section-title reveal">Projects</h2>
+            <p class="section-sub reveal">
+              A selection of recent work and experiments.
+            </p>
+          </div>
+          <div class="slider" data-slider>
+            <div class="slides">
+              <article class="slide project" aria-label="Project 1">
+                <a
+                  class="project-card"
+                  href="https://mdnuruddin.vercel.app"
+                  target="_blank"
+                  rel="noopener"
+                  data-lightbox
+                >
+                  <div
+                    class="thumb"
+                    style="
+                      --bg: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop');
+                    "
+                  ></div>
+                  <div class="overlay">
+                    <h3>Personal Portfolio</h3>
+                    <p>React, Tailwind, Vite</p>
+                  </div>
+                </a>
+              </article>
+              <article class="slide project" aria-label="Project 2">
+                <a class="project-card" href="#" data-lightbox>
+                  <div
+                    class="thumb"
+                    style="
+                      --bg: url('https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=1200&auto=format&fit=crop');
+                    "
+                  ></div>
+                  <div class="overlay">
+                    <h3>Dashboard UI</h3>
+                    <p>JS, Charts, REST</p>
+                  </div>
+                </a>
+              </article>
+              <article class="slide project" aria-label="Project 3">
+                <a class="project-card" href="#" data-lightbox>
+                  <div
+                    class="thumb"
+                    style="
+                      --bg: url('https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop');
+                    "
+                  ></div>
+                  <div class="overlay">
+                    <h3>AI Playground</h3>
+                    <p>JS, Web Workers</p>
+                  </div>
+                </a>
+              </article>
+              <article class="slide project" aria-label="Project 4">
+                <a class="project-card" href="#" data-lightbox>
+                  <div
+                    class="thumb"
+                    style="
+                      --bg: url('https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1200&auto=format&fit=crop');
+                    "
+                  ></div>
+                  <div class="overlay">
+                    <h3>Component Library</h3>
+                    <p>CSS, Accessibility</p>
+                  </div>
+                </a>
+              </article>
+              <article class="slide project" aria-label="Project 5">
+                <a class="project-card" href="#" data-lightbox>
+                  <div
+                    class="thumb"
+                    style="
+                      --bg: url('https://images.unsplash.com/photo-1523473827532-1c0cb5f0b1b4?q=80&w=1200&auto=format&fit=crop');
+                    "
+                  ></div>
+                  <div class="overlay">
+                    <h3>Cybersecurity Lab</h3>
+                    <p>C, C++, JS</p>
+                  </div>
+                </a>
+              </article>
+            </div>
+            <button class="nav prev" aria-label="Previous slide">
+              &#10094;
+            </button>
+            <button class="nav next" aria-label="Next slide">&#10095;</button>
+            <div class="dots" aria-hidden="true"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Certificates Slider -->
+      <section
+        class="section"
+        id="certificates"
+        aria-labelledby="certificates-heading"
+      >
+        <div class="container">
+          <div class="section-head">
+            <h2 class="section-title reveal">
+              Certificates &amp; Achievements
+            </h2>
+            <p class="section-sub reveal">
+              Selected milestones and recognitions.
+            </p>
+          </div>
+          <div class="slider compact" data-slider>
+            <div class="slides">
+              <article class="slide cert">
+                <a class="cert-card" href="#" data-lightbox>
+                  <div
+                    class="thumb"
+                    style="
+                      --bg: url('https://images.unsplash.com/photo-1516387938699-a93567ec168e?q=80&w=1200&auto=format&fit=crop');
+                    "
+                  ></div>
+                  <div class="overlay">
+                    <h3>Frontend Foundations</h3>
+                    <p>Completed with distinction</p>
+                  </div>
+                </a>
+              </article>
+              <article class="slide cert">
+                <a class="cert-card" href="#" data-lightbox>
+                  <div
+                    class="thumb"
+                    style="
+                      --bg: url('https://images.unsplash.com/photo-1557800636-894a64c1696f?q=80&w=1200&auto=format&fit=crop');
+                    "
+                  ></div>
+                  <div class="overlay">
+                    <h3>JavaScript Mastery</h3>
+                    <p>Advanced algorithms</p>
+                  </div>
+                </a>
+              </article>
+              <article class="slide cert">
+                <a class="cert-card" href="#" data-lightbox>
+                  <div
+                    class="thumb"
+                    style="
+                      --bg: url('https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=1200&auto=format&fit=crop');
+                    "
+                  ></div>
+                  <div class="overlay">
+                    <h3>React Specialist</h3>
+                    <p>Modern SPA patterns</p>
+                  </div>
+                </a>
+              </article>
+              <article class="slide cert">
+                <a class="cert-card" href="#" data-lightbox>
+                  <div
+                    class="thumb"
+                    style="
+                      --bg: url('https://images.unsplash.com/photo-1587620962725-abab7fe55159?q=80&w=1200&auto=format&fit=crop');
+                    "
+                  ></div>
+                  <div class="overlay">
+                    <h3>Git &amp; GitHub</h3>
+                    <p>Collaboration &amp; CI</p>
+                  </div>
+                </a>
+              </article>
+              <article class="slide cert">
+                <a class="cert-card" href="#" data-lightbox>
+                  <div
+                    class="thumb"
+                    style="
+                      --bg: url('https://images.unsplash.com/photo-1510511233900-1982d92bd835?q=80&w=1200&auto=format&fit=crop');
+                    "
+                  ></div>
+                  <div class="overlay">
+                    <h3>Cybersecurity Basics</h3>
+                    <p>Secure coding</p>
+                  </div>
+                </a>
+              </article>
+            </div>
+            <button class="nav prev" aria-label="Previous slide">
+              &#10094;
+            </button>
+            <button class="nav next" aria-label="Next slide">&#10095;</button>
+            <div class="dots" aria-hidden="true"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Social Links -->
+      <section class="section alt" id="social" aria-labelledby="social-heading">
+        <div class="container">
+          <h2 class="section-title reveal">Connect</h2>
+          <div class="socials reveal">
+            <a
+              class="social"
+              href="https://www.linkedin.com/"
+              target="_blank"
+              rel="noopener"
+              aria-label="LinkedIn"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                width="28"
+                height="28"
+                aria-hidden="true"
+              >
+                <path
+                  fill="currentColor"
+                  d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.05-1.86-3.05-1.86 0-2.14 1.45-2.14 2.95v5.67H9.35V9H12.8v1.56h.05c.48-.9 1.64-1.86 3.37-1.86 3.6 0 4.26 2.37 4.26 5.44v6.31zM5.34 7.43a2.06 2.06 0 110-4.12 2.06 2.06 0 010 4.12zM7.12 20.45H3.56V9h3.56v11.45z"
+                />
+              </svg>
+            </a>
+            <a
+              class="social"
+              href="https://github.com/"
+              target="_blank"
+              rel="noopener"
+              aria-label="GitHub"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                width="28"
+                height="28"
+                aria-hidden="true"
+              >
+                <path
+                  fill="currentColor"
+                  d="M12 2C6.48 2 2 6.58 2 12.26c0 4.51 2.87 8.33 6.84 9.68.5.1.68-.22.68-.49 0-.24-.01-.88-.01-1.73-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.1-1.49-1.1-1.49-.9-.62.07-.61.07-.61 1 .07 1.53 1.06 1.53 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.36-2.22-.26-4.56-1.13-4.56-5 0-1.11.39-2.01 1.03-2.72-.1-.26-.45-1.3.1-2.7 0 0 .84-.27 2.75 1.04a9.2 9.2 0 015 0c1.91-1.31 2.75-1.04 2.75-1.04.55 1.4.2 2.44.1 2.7.64.71 1.03 1.61 1.03 2.72 0 3.88-2.34 4.73-4.57 4.98.36.33.68.97.68 1.96 0 1.41-.01 2.55-.01 2.9 0 .27.18.6.69.49A10.06 10.06 0 0022 12.26C22 6.58 17.52 2 12 2z"
+                />
+              </svg>
+            </a>
+            <a
+              class="social"
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener"
+              aria-label="Instagram"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                width="28"
+                height="28"
+                aria-hidden="true"
+              >
+                <path
+                  fill="currentColor"
+                  d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2a3 3 0 013 3v10a3 3 0 01-3 3H7a3 3 0 01-3-3V7a3 3 0 013-3h10zm-5 3.3A5.7 5.7 0 1017.7 13 5.71 5.71 0 0012 7.3zm0 2A3.7 3.7 0 111 3.7 3.7 0 0112 9.3zm5.8-3.96a1.34 1.34 0 11-2.67 0 1.34 1.34 0 012.67 0z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer / Contact -->
+    <footer class="footer" id="contact">
+      <div class="container footer-grid">
+        <div class="footer-info">
+          <h3>Let’s work together</h3>
+          <p>Reach out for collaborations, opportunities, or just to say hi.</p>
+        </div>
+        <ul class="footer-contact">
+          <li>
+            <span>Phone</span><a href="tel:+8801830170084">+880 1830‑170084</a>
+          </li>
+          <li>
+            <span>Email</span
+            ><a href="mailto:mdnuruddin2002@gmail.com"
+              >mdnuruddin2002@gmail.com</a
+            >
+          </li>
+          <li><span>Location</span><strong>Mirpur‑11, Dhaka</strong></li>
+          <li>
+            <span>Website</span
+            ><a
+              href="https://mdnuruddin.vercel.app"
+              target="_blank"
+              rel="noopener"
+              >mdnuruddin.vercel.app</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="copyright">
+        © <span id="year"></span> Md Nur Uddin. All rights reserved.
+      </div>
+      <button id="toTop" class="to-top" aria-label="Scroll to top">↑</button>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div
+      id="lightbox"
+      class="lightbox"
+      aria-hidden="true"
+      role="dialog"
+      aria-modal="true"
+    >
+      <button
+        class="close"
+        aria-label="Close"
+        onclick="window.__lightbox.close()"
+      >
+        ×
+      </button>
+      <img alt="Preview" />
+    </div>
+
+    <script src="/script.js" defer></script>
+  </body>
+</html>
